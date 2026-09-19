@@ -29,7 +29,7 @@ async function fetchWithRetry(url) {
         if (res.ok) return res;
         if (!TRANSIENT_STATUSES.has(res.status)) {
             const body = await res.text();
-            throw new Error(`GovTrack API request failed: ${res.status} ${res.statusText} — ${body.slice(0, 300)}`);
+            throw new Error(`GovTrack API request failed: ${res.status} ${res.statusText}: ${body.slice(0, 300)}`);
         }
         lastError = new Error(`GovTrack API request failed: ${res.status} ${res.statusText}`);
         if (attempt < MAX_ATTEMPTS) await sleep(1000 * 2 ** (attempt - 1));

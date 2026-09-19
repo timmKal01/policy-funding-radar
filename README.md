@@ -1,8 +1,8 @@
-# Policy & Funding Radar — Bills, Rules & Grants by Keyword
+# Policy & Funding Radar: Bills, Rules & Grants by Keyword
 
 Give it a keyword. Get back one combined report: matching U.S. Congress
 bills, new Federal Register regulations, and open Grants.gov funding
-opportunities — three government portals, one search.
+opportunities: three government portals, one search.
 
 ## Who this is for
 
@@ -49,7 +49,7 @@ One record per keyword:
 ```
 
 If one source fails (a portal outage, for example) the other two still
-return normally — `sourceErrors` lists which source(s) failed and why,
+return normally: `sourceErrors` lists which source(s) failed and why,
 rather than failing the whole keyword.
 
 ## How it works
@@ -62,7 +62,7 @@ Three official, direct API calls per keyword, no scraping, no proxy:
 
 ## Related products
 
-- [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker) — bill search with more filters (status, sponsor state, specific Congress), not bundled with regulations or grants
-- [Federal Register Tracker](https://github.com/timmKal01/federal-register-tracker) — regulation search with agency/document-type filters
-- [Grant Opportunity Tracker](https://github.com/timmKal01/grant-opportunity-tracker) — grant search with agency filters
-- [Federal Grant Award Tracker](https://github.com/timmKal01/federal-grant-award-tracker) — grants already *awarded*, for tracking who got funded rather than what's open
+- [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker): bill search with more filters (status, sponsor state, specific Congress), not bundled with regulations or grants
+- [Federal Register Tracker](https://github.com/timmKal01/federal-register-tracker): regulation search with agency/document-type filters
+- [Grant Opportunity Tracker](https://github.com/timmKal01/grant-opportunity-tracker): grant search with agency filters
+- [Federal Grant Award Tracker](https://github.com/timmKal01/federal-grant-award-tracker): grants already *awarded*, for tracking who got funded rather than what's open
