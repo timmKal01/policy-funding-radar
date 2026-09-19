@@ -1,0 +1,32 @@
+{
+    "title": "Policy & Funding Radar Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords",
+            "type": "array",
+            "editor": "stringList",
+            "description": "One search per keyword, e.g. \"data centers\", \"broadband\", \"PFAS\". Each keyword is searched across Congress bills, Federal Register documents, and Grants.gov opportunities."
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back to search across all three sources.",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 365
+        },
+        "maxResultsPerSource": {
+            "title": "Max results per source",
+            "type": "integer",
+            "editor": "number",
+            "description": "Cap on results returned from each of the three sources, per keyword.",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 50
+        }
+    },
+    "required": ["keywords"]
+}

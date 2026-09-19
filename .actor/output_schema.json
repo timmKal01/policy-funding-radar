@@ -1,0 +1,12 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of Policy & Funding Radar",
+    "description": "One record per keyword: matching Congress bills, Federal Register documents, and Grants.gov opportunities.",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Results",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

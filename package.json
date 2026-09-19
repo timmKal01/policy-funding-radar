@@ -1,0 +1,15 @@
+{
+    "name": "policy-funding-radar",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Search one keyword across Congress bills, new federal regulations, and open federal grant opportunities in one combined report.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}
