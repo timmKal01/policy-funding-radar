@@ -60,6 +60,13 @@ Three official, direct API calls per keyword, no scraping, no proxy:
 - **Federal Register API** for new rules, proposed rules, and notices (same source as [Federal Register Tracker](https://github.com/timmKal01/federal-register-tracker))
 - **Grants.gov API** for open funding opportunities (same source as [Grant Opportunity Tracker](https://github.com/timmKal01/grant-opportunity-tracker))
 
+## Pricing note
+
+Billed per **keyword searched**, not per item returned: one charge covers the
+combined lookup across Congress bills, federal regulations, and grant
+opportunities for that keyword, whether it turns up zero results or dozens
+across all three sources.
+
 ## Related products
 
 - [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker): bill search with more filters (status, sponsor state, specific Congress), not bundled with regulations or grants
