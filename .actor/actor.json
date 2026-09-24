@@ -1,7 +1,7 @@
 {
     "actorSpecification": 1,
     "name": "policy-funding-radar",
-    "title": "Policy & Funding Radar: Bills, Rules & Grants by Keyword",
+    "title": "Policy & Funding Radar: Bills, Rules & Grants",
     "description": "Search one keyword across Congress bills, new federal regulations, and open federal grant opportunities in one combined report. For government-affairs, lobbying, and grant-seeking teams checking three portals at once.",
     "version": "0.1",
     "meta": {
