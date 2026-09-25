@@ -7,7 +7,9 @@
             "title": "Keywords",
             "type": "array",
             "editor": "stringList",
-            "description": "One search per keyword, e.g. \"data centers\", \"broadband\", \"PFAS\". Each keyword is searched across Congress bills, Federal Register documents, and Grants.gov opportunities."
+            "description": "One search per keyword, e.g. \"data centers\", \"broadband\", \"PFAS\". Each keyword is searched across Congress bills, Federal Register documents, and Grants.gov opportunities.",
+            "prefill": ["data centers"],
+            "default": ["data centers"]
         },
         "daysBack": {
             "title": "Days back",

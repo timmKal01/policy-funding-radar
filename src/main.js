@@ -6,13 +6,20 @@ import { fetchOpportunities } from './grants.js';
 await Actor.init();
 
 const input = (await Actor.getInput()) ?? {};
-const { keywords = [], daysBack = 30, maxResultsPerSource = 10 } = input;
+const { daysBack = 30, maxResultsPerSource = 10 } = input;
+let { keywords } = input;
 
 /** Must match the event name configured in this Actor's pay-per-event pricing on Apify. */
 const KEYWORD_SEARCHED_EVENT = 'keyword-searched';
 
-if (!Array.isArray(keywords) || keywords.length === 0) {
-    throw new Error('Input "keywords" must be a non-empty array, e.g. ["data centers"].');
+// An empty run (first click in the Console, Apify's daily health check) must
+// still return data, or Apify flags the actor "under maintenance".
+if (keywords === undefined || (Array.isArray(keywords) && keywords.length === 0)) {
+    keywords = ['data centers'];
+    log.info('No keywords given; defaulting to the example "data centers".');
+}
+if (!Array.isArray(keywords)) {
+    throw new Error('Input "keywords" must be an array, e.g. ["data centers"].');
 }
 
 const endDate = new Date();
