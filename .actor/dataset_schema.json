@@ -1,0 +1,53 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "keyword",
+                    "totalItems",
+                    "congressBills",
+                    "federalRegisterDocuments",
+                    "grantOpportunities",
+                    "sourceErrors",
+                    "daysBack"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "keyword": {
+                        "label": "Keyword",
+                        "format": "text"
+                    },
+                    "totalItems": {
+                        "label": "Total items",
+                        "format": "number"
+                    },
+                    "congressBills": {
+                        "label": "Congress bills",
+                        "format": "array"
+                    },
+                    "federalRegisterDocuments": {
+                        "label": "Federal register documents",
+                        "format": "array"
+                    },
+                    "grantOpportunities": {
+                        "label": "Grant opportunities",
+                        "format": "array"
+                    },
+                    "sourceErrors": {
+                        "label": "Source errors",
+                        "format": "array"
+                    },
+                    "daysBack": {
+                        "label": "Days back",
+                        "format": "number"
+                    }
+                }
+            }
+        }
+    }
+}
