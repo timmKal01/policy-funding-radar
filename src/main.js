@@ -1,5 +1,5 @@
 import { Actor, log } from 'apify';
-import { fetchBills } from './govtrack.js';
+import { fetchBills } from './govinfo.js';
 import { fetchDocuments } from './fedregister.js';
 import { fetchOpportunities } from './grants.js';
 

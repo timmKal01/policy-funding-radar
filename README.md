@@ -54,9 +54,9 @@ rather than failing the whole keyword.
 
 ## How it works
 
-Three official, direct API calls per keyword, no scraping, no proxy:
+Three official government sources per keyword, no scraping, no proxy, no API keys:
 
-- **GovTrack.us** for Congress bills (same source as [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker))
+- **Congress.gov bill status data** from GovInfo's public BILLSTATUS bulk files for Congress bills, matched on bill titles (same source as [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker))
 - **Federal Register API** for new rules, proposed rules, and notices (same source as [Federal Register Tracker](https://github.com/timmKal01/federal-register-tracker))
 - **Grants.gov API** for open funding opportunities (same source as [Grant Opportunity Tracker](https://github.com/timmKal01/grant-opportunity-tracker))
 
@@ -69,7 +69,7 @@ across all three sources.
 
 ## Related products
 
-- [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker): bill search with more filters (status, sponsor state, specific Congress), not bundled with regulations or grants
+- [Congress Bill Tracker](https://github.com/timmKal01/congress-bill-tracker): bill search with more filters (legislative status, specific Congress), not bundled with regulations or grants
 - [Federal Register Tracker](https://github.com/timmKal01/federal-register-tracker): regulation search with agency/document-type filters
 - [Grant Opportunity Tracker](https://github.com/timmKal01/grant-opportunity-tracker): grant search with agency filters
 - [Federal Grant Award Tracker](https://github.com/timmKal01/federal-grant-award-tracker): grants already *awarded*, for tracking who got funded rather than what's open
