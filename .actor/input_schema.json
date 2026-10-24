@@ -30,5 +30,5 @@
             "maximum": 50
         }
     },
-    "required": ["keywords"]
+    "required": []
 }
